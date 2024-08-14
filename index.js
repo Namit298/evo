@@ -42,12 +42,7 @@ app.post("/submit", async (req, res) => {
       to: email,
       subject: subject,
       text: text,
-      attachments: [
-          {
-              filename: 'Fairfox Eon Retail WA.pdf',
-              path:  'backend\files\Fairfox Eon Retail WA.pdf' // Using path.join to create an absolute path
-          }
-      ]
+      
   };
   
     try {
